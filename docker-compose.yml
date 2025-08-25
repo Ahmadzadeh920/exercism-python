@@ -1,0 +1,9 @@
+
+services:
+  exercism:
+    build: .
+    container_name: exercism-python
+    volumes:
+      - .:/app   # Mount current folder into /app inside container
+    stdin_open: true
+    tty: true
